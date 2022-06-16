@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsla(0, 0%, 100%, 0.75);
+}
+.container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 50px auto;
+}
+.container div {
+  padding: 30px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 span {
+  color: hsl(31, 77%, 52%);
+}
+a {
+  color: hsl(184, 100%, 22%);
+}
+a:hover {
+  color: hsl(179, 100%, 13%);
+}
+.box1 {
+  flex: 1;
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.box2 {
+  flex: 1;
+  background-color: hsl(184, 100%, 22%);
+}
+.box3 {
+  flex: 1;
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  line-height: 50px;
+  margin: 20px 0;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  /* height: 150px; */
+}
+.button {
+  display: inline-block;
+  border: none;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.btn1 {
+  border: 1px solid hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+.btn1:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+.btn2 {
+  border: 1px solid hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+.btn2:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+.btn3 {
+  border: 1px solid hsl(179, 100%, 13%);
+  background: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+.btn3:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* width: fit-content; */
+  }
+}
+
+/* Grid styling begins here. */
+
+#grid {
+  background-color: black;
+}
+.grid-boxes {
+  display: grid;
+  gap: 0.5em;
+  grid-template-areas:
+    "a a b"
+    "c d d"
+    "c e e";
+  grid-template-columns: 200px 70px 150px;
+  grid-template-rows: 130px 70px 100px;
+  justify-content: center;
+  margin: 5em;
+}
+.grid-boxes div {
+  padding: 2em;
+}
+.red-box {
+  background-color: red;
+  grid-area: a;
+}
+.orange-box {
+  background-color: orange;
+  grid-area: b;
+}
+.green-box {
+  background-color: green;
+  grid-area: c;
+}
+
+.blue-box {
+  background-color: blue;
+  grid-area: d;
+}
+.blue-box1 {
+  background-color: blue;
+  grid-area: e;
+}
